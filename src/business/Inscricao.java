@@ -1,14 +1,14 @@
-package Business;
+package business;
 
 import model.Participante;
 
-public class Inscricao extends Participante {
+public class Inscricao {
 
     private float valor = 0;
 
-    public float calcularValor() {
+    public float calcularValor(Participante p) {
 
-        switch (getCategoria().toLowerCase()) {
+        switch (p.getCategoria().toLowerCase()) {
 
             case "aluno":
                 valor = 30.0f;
@@ -26,15 +26,9 @@ public class Inscricao extends Participante {
                 System.out.println("Categoria inválida.");
                 break;
         }
-        if (getTipo().toLowerCase() == "presencial"){
-
-        } else if (getTipo().toLowerCase() == "online") {
+        if ("online".equalsIgnoreCase(p.getTipo())){
             valor = valor * 0.8F;
-
-        }else{
-            System.out.println("Categoria invalida");
         }
-
 
         return valor;
     }
