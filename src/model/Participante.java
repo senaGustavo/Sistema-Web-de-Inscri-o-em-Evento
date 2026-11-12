@@ -6,7 +6,12 @@ public class Participante {
     protected String tipo;
     protected String categoria = null;
 
-    public Participante() {
+
+    public Participante(String nome, String email, String tipo, String categoria) {
+        this.nome = nome;
+        this.email = email;
+        this.tipo = tipo;
+        this.categoria = categoria;
     }
 
     public String getNome() {
