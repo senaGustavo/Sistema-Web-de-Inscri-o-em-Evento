@@ -3,14 +3,10 @@ package model;
 public class Participante {
     protected String nome = null;
     protected String email = null;
-    protected boolean tipo;
+    protected String tipo;
     protected String categoria = null;
 
-    public Participante(String nome, String email, boolean tipo, String categoria) {
-        this.nome = nome;
-        this.email = email;
-        this.tipo = tipo;
-        this.categoria = categoria;
+    public Participante() {
     }
 
     public String getNome() {
@@ -29,11 +25,11 @@ public class Participante {
         this.email = email;
     }
 
-    public boolean isTipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(boolean tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 
