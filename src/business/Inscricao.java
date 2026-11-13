@@ -1,12 +1,13 @@
+
 package business;
 
 import model.Participante;
 
 public class Inscricao {
 
-    private float valor = 0;
-
     public float calcularValor(Participante p) {
+
+        float valor = 0;
 
         switch (p.getCategoria().toLowerCase()) {
 
@@ -26,8 +27,9 @@ public class Inscricao {
                 System.out.println("Categoria inválida.");
                 break;
         }
-        if ("online".equalsIgnoreCase(p.getTipo())){
-            valor = valor * 0.8F;
+
+        if ("online".equalsIgnoreCase(p.getTipo())) {
+            valor = valor * 0.8f;
         }
 
         return valor;

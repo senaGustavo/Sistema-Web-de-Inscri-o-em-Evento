@@ -1,13 +1,20 @@
+
 package model;
 
 public class Participante {
-    protected String nome = null;
-    protected String email = null;
-    protected String tipo;
-    protected String categoria = null;
 
+    private String nome;
+    private String email;
+    private String tipo;
+    private String categoria;
 
-    public Participante(String nome, String email, String tipo, String categoria) {
+    // Construtor vazio
+    public Participante() {
+    }
+
+    // Construtor com parâmetros
+    public Participante(String nome, String email,
+                        String tipo, String categoria) {
         this.nome = nome;
         this.email = email;
         this.tipo = tipo;

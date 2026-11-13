@@ -141,6 +141,17 @@ input:focus, select:focus {
     background: #b91c1c;
 }
 
+.credits {
+    margin-top: 20px;
+    text-align: center;
+    color: #8fa3c7;
+    font-size: 13px;
+}
+
+.credits p {
+    margin: 4px 0;
+}
+
 @media (max-width: 480px) {
     .card {
         padding: 25px 20px;

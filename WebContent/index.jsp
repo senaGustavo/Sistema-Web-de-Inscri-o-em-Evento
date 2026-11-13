@@ -19,7 +19,7 @@
                 Preencha seus dados para realizar sua inscrição.
             </p>
 
-            <form action="ServletInscricao" method="post">
+            <form action="${pageContext.request.contextPath}/ServletInscricao" method="post">
 
                 <div class="form-group">
                     <label for="nome">Nome completo</label>
@@ -59,6 +59,11 @@
             </form>
 
         </section>
+        <footer class="credits">
+    		<p>Desenvolvido por:</p>
+    		<p>Gustavo Sena de Souza</p>
+    		<p>João Paulo Zimmermann Matusi</p>
+		</footer>
     </main>
 
 </body>

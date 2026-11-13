@@ -14,6 +14,8 @@ import model.Participante;
 
 @WebServlet("/ServletInscricao")
 public class ServletInscricao extends HttpServlet {
+	
+	private static final long serialVersionUID = 1L;
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -46,7 +48,9 @@ public class ServletInscricao extends HttpServlet {
         session.setAttribute("valorFinal", String.format("%.2f", valorFinal));
 
         // 6. Encaminha para resultado.jsp (sem gerar HTML)
-        RequestDispatcher dispatcher = request.getRequestDispatcher("resultado.jsp");
-        dispatcher.forward(request, response);
+        RequestDispatcher dispatcher =
+        	    request.getRequestDispatcher("/resultado.jsp");
+
+        	dispatcher.forward(request, response);
     }
 }
