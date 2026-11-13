@@ -105,8 +105,8 @@ http://localhost:8080/Sistema-Web-de-Inscri-o-em-Evento/
 
 ## 👨‍💻 Desenvolvedores
 
-- **João Paulo Zimmermann Matusi**
-- **Gustavo Sena de Souza**
+- João Paulo Zimmermann Matsui - [GitHub](https://github.com/JP-GhOsT) | [LinkedIn](https://linkedin.com/in/joaomatsui)
+- Gustavo Sena de Souza - [GitHub](https://github.com/senaGustavo) | [LinkedIn](https://www.linkedin.com/in/gustavo-sena-ads-ia/)
 
 ---
 
